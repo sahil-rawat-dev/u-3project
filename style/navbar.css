@@ -1,0 +1,178 @@
+#navbar1{
+
+    width:100%;
+    height: 50px;
+    background-color:
+    #fee8e8;
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    #Shipping{
+    font-family: sans-serif;
+    background-color:
+    #fee8e8;
+    color: black;
+    cursor:pointer;
+    border: transparent;
+    margin:0px 25px;
+    font-size: 17px;
+     
+    }
+    #nav1{
+    margin-top:15px;
+    margin-right:15px;
+    }
+    #collect{
+    background-color:
+    #fee8e8;
+    color: #ff9797;
+    border: transparent;
+    cursor: pointer;
+    margin:0px 50px;
+    font-size: 17px;
+    }
+    #fa1{
+        margin-right:15px;
+    }
+    
+    
+    #fas1{
+    gap: 10px;
+    margin-right:15px;
+    }
+    #nav2{
+    margin-top:8px;
+    margin-right:15px;
+    display: flex;
+    } 
+    .icon{
+    font-family: sans-serif;
+    background-color:#fee8e8;
+    color: black;
+    cursor:pointer;
+    border: transparent;
+    margin:0px 25px;
+    font-size:17px;
+    
+    }
+    
+    #navbar123{
+    display: flex;
+    max-width: 100%;
+    height:70px;
+    background-color:white;
+    
+    }
+    #img1{
+    height:80%;
+    width:14%;
+    margin-left: 5%;
+    background-color:white;
+    }
+    
+    .search1{
+    width:500px;
+    height: 40px;
+    background-color: #F6F7F9;
+    border-bottom:1px solid rgba(128, 128, 128, 0.377);
+    margin-top:10px;
+    margin-left:80px;
+    }
+    .search2{
+    display: flex;
+    width: 357px;
+    height: 36px;
+    }
+    #search{
+    color: rgba(59, 58, 58, 0.507);
+    padding: 13px 0px 13px 10px;
+    }
+    #sear{
+    height:30px;
+    width:435px;
+    outline: none;
+    background-color: #F6F7F9;
+    border: none;
+    padding-top:5px;
+    font-size: 16px;
+    }
+    #current{
+        display: flex;
+        margin-left: 300px;
+        margin-top:20px;
+    }
+    #far1{
+        font-size:25px;
+        width:23px;
+        height:41px;
+        margin-right:80px;
+    }
+    #far2{
+        font-size: 25px;
+    }
+    #navbar124{    
+    width:1120px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    }
+    #parts1{
+    
+        font-size: 16px;
+        
+    }
+    #parts2{
+        
+        font-size: 16px;
+        
+    
+    }#parts3{
+    
+        font-size: 16px;
+    }#parts4{
+        
+        font-size: 16px;
+       
+    
+    }#parts5{
+        
+        font-size: 16px;
+      
+    
+    }#parts6{
+        
+        font-size: 16px;
+        
+    
+    }#parts7{
+        
+        font-size: 16px;
+        
+    
+    }#parts8{
+        
+        font-size: 16px;
+    
+    
+    }#parts9{
+    
+        font-size: 16px;
+      
+    }
+    #parts{
+            width:60%;
+            grid-template-columns: (2,1fr);
+            background-color: transparent;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            background-image: url("ttps://files.myglamm.com/site-images/original/MBF-Desktop.jpg");
+            background-size: cover;
+        }
+        #div2{
+            display: flex;
+        }
+      
