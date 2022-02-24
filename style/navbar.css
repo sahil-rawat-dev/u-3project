@@ -163,13 +163,14 @@
     }
     #parts{
             width:60%;
-            height:300px;
             grid-template-columns: (2,1fr);
             background-color: transparent;
             color: black;
             display: flex;
             justify-content: space-between;
             margin: auto;
+            background-image: url("ttps://files.myglamm.com/site-images/original/MBF-Desktop.jpg");
+            background-size: cover;
         }
         #div2{
             display: flex;
