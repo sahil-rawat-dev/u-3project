@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+/* ----------------------------------------------- */
+#navbar {
+    max-width: 100%;
+    height: 71px;
+    background-color: white;
+    box-shadow: 5px 3px 2px rgb(221, 220, 220);
+
+}
+
+#logo>img {
+    width: 150px;
+
+
+}
+
+#logo {
+    padding-top: 15px;
+    margin-left: 250px;
+}
+
+#subdiv {
+  
+  width: 90%;
+  display: grid;
+  grid-template-columns: 52% 45%;
+  grid-gap: 2%;
+  border: 1px solid green;
+  margin: auto;
+
+}
+/* -------------------------------- */
+
+#container{
+    border: 1px solid red;
+  
+padding: 20px;
+  
+
+}
+#top{
+    font-size: 30px;
+}
+#one{
+    border: 1px solid red;
+    margin: 10px;
+    display: flex;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    background-color: rgb(232,240,254);
+    color: grey;
+    outline-color: gray;
+}
+#name{
+    width: 30%;
+    border: none;
+    background-color: rgb(232,240,254);
+    color: grey;
+    outline-color: gray;
+}
+#two{
+    border: 1px solid blue;
+    display: flex;
+    margin: 10px;
+}
+#two>input{
+    width: 20%;
+    border: none;
+    background-color: rgb(232,240,254);
+    color: grey;
+    outline-color: gray;
+}
+select{
+    width: 15%;
+    margin: 10px;
+    border: none;
+    background-color: rgb(232,240,254);
+    color: grey;
+    outline-color: gray;
+
+}
+
+#three{
+    border: 1px solid yellow;
+    display: flex;
+    margin: 10px;
+}
+#three>input{
+    width: 20%;
+    border: none;
+    background-color: rgb(232,240,254);
+    color: grey;
+    outline-color: gray;
+}
+
+#four{
+    border: 1px solid orange;
+    display: flex;
+        margin: 10px;
+        justify-content: flex-end;
+        padding-right: 10%;
+}
+#four>input{
+
+    margin-top: 18px;
+
+}
+
+
+/* ------------------------------------ */
+#bill {
+    background-color: #F5F5F5;
+    border: 1px solid red;
+}
+
+#heading>p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#bill > div{
+    width: 90%;
+    margin: auto;
+    border: 1px solid blue;
+}
+#bill_heading {
+    margin-top: 16px;
+  
+    font-size: 30px;
+}
+
+#order_summary{
+    display: flex;
+    margin-top: 30px;
+    border: 1px solid rgb(119, 18, 35);
+    margin: 5px;
+    /* text-align: center; */
+  
+    
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    margin-top: 14px;
+}
+#amount{
+    margin-left: 40%;
+}
+
+#promocode{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid magenta;
+}
+#promo_input{
+   
+    margin-left: 5px;
+    border: 1px solid brown;
+}
+
+#final_amount{
+    margin-left: 50%;
+}
+#promo_input > button {
+   
+  
+   
+    border-radius: 3px;
+    border: none;
+    background-color: #757575;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 8px;
+    
+    
+}
+
+#proceed_payment{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#proceed_payment > button{
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+    color:white ;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+
+
+#ip , #op
+{
+    height: 80%;
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+#ip > input
+{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-size: 11pt;
+    padding-left: 10px;
+    
+}
+
+
+#ip
+{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3.3%;
+}
+
+
+#op
+{
+    padding-top: 7%;
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div id="top">
+        <div id="navbar">
+            <div id="logo">
+                <img src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+<!-- ----------------------- -->
+  
+   <div id="main_div">
+        <div id="heading">
+            <p>Checkout</p>
+        </div>
+
+
+        <!-- ------------------------------ -->
+        <div id="subdiv">
+
+
+
+
+            <div id="container">
+                <div id="top">
+                    <p>Shipping Address</p>
+                </div>
+                <hr>
+             <form id="bottom">
+                    
+                 <div id="one">
+                     
+                   <input type="text" placeholder="Name" id="name" required><input type="number" placeholder="Number" id="number" required ><input type="Email" placeholder="Email" id="email" required>
+         
+                 </div>
+         
+         
+                 <div id="two">
+         
+                   <select name="Home" id="select">
+                      <option value="1">Office</option>
+                      <option value="1">Home</option>
+                      <option value="1">Other</option>
+         
+                      <input type="number" placeholder="FLAT NO. / HOUSE NO." id="number" required >
+                      <input type="text" placeholder="Street name" id="street" required >
+                      <input type="text" placeholder="Nighbourhood" id="number" required >
+         
+                   </select>
+         
+                 </div>
+         
+                 <div id="three">
+         
+                     <input type="number" placeholder="Pincode"  required >
+                     <input type="text" placeholder="City"  required >
+                     <input type="text" placeholder="State"  required >
+                     <input type="text" placeholder="Landmark" required id="landmark" >
+         
+                 </div>
+         
+                 <div id="four">
+                    <input type="checkbox"> <p> Mark as default</p>
+                 </div>
+         
+         
+                 <div id="five">
+         
+                     <button>Continue</button>
+
+         
+                 </div>
+         
+             </form>
+             </div>
+
+
+
+
+
+            <!-- ---------------------------------- -->
+            
+            <div id="bill">
+                <div>
+                    <div id="bill_heading">
+                        <p>Order Summary</p>
+                    </div>
+
+                    <!-- ------- -->
+                    <div>
+                        <div id="order_summary">
+                            <ul>
+                                <li>Total Amount</li>
+                                <li>Shipping Charges</li>
+                                <li>Discount</li>
+                                
+                            </ul>
+                            <ul id="amount">
+                                <li  id="tamount" >$00.00</li>
+                                <li id="shipcharge" >$00.00</li>
+                                <li id="discount" >$00.00</li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ---------------- -->
+                    <p id="promocode">Apply Promo Code</p>
+
+
+                    <div id="promo_input">
+                        <input type="text" placeholder="Apply promocode here..." id="apply_promo">
+                        <button onclick="promo()">APPLY</button>
+                    </div>
+
+
+                    <div id="q01"></div>
+
+
+                    <div id="order_summary">
+                        <ul>
+                            <li id="payble_amount">Amount Payable</li>
+                            <!-- <li>You Saved</li>
+                            <li>You will earn</li> -->
+                        </ul>
+                        <ul id="final_amount">
+                            <li id="payamount">$00.00</li>
+                            <!-- <li id="yousaved">$00.00</li>
+                            <li id="non">₹ 15</li> -->
+                        </ul>
+                    </div>
+
+                    <div id="proceed_payment">
+                        <Button>Proceed to payment</Button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
