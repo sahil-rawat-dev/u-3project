@@ -10,8 +10,9 @@ let cart = JSON.parse(localStorage.getItem("myglammCart"));
 var empty_cart = document.getElementById("sub_div");
 
 // console.log(cart.length);
-if (cart.length < 1) {
+if (cart.length<1) {
   empty_cart.style.display = "block";
+
 } else {
   empty_cart.style.display = "none";
   empty_cart.style.display = "none";
