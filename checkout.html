@@ -361,8 +361,9 @@ li{
                             </ul>
                             <ul id="amount">
                                 <li  id="tamount" >$00.00</li>
-                                <li id="shipcharge" >$00.00</li>
-                                <li id="discount" >$00.00</li>
+                                <li id="shipcharge" style="text-decoration:line-through;" > ₹ 40</li>
+                                
+                                <li id="discount" > - - - - </li>
                                 
                                 
                             </ul>
@@ -409,3 +410,47 @@ li{
 
 </body>
 </html>
+
+
+<script>
+
+let total = JSON.parse(localStorage.getItem("myglamm-total"));
+
+function totalDisplay (total)
+{
+   
+let displaytotal = document.getElementById("tamount");
+let displaytotal1 = document.getElementById("payamount");
+
+console.log(total)
+
+displaytotal.innerText = "₹ " + total[0];
+displaytotal1.innerText = "₹" + total;
+
+}
+
+
+totalDisplay (total);
+
+
+// ------------------------apply coupen-------------
+
+
+function promo(){
+    let input = document.getElementById("apply_promo").value;
+
+    if(input ==="masai30")
+    {
+        total = Math.floor(total- 0.3*total);
+        console.log(total);
+        let displaytotal = document.getElementById("payamount");
+        displaytotal.innerText = "₹" + total
+
+        let discount = document.getElementById("discount");
+        discount.innerText = " 30 % "
+    }
+}
+
+
+
+</script>
