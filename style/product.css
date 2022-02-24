@@ -1,0 +1,35 @@
+
+#top{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+}
+#top>div{
+    text-align: center;
+    border:1px solid grey;
+}
+#top>div>img{
+    width:80%;
+}
+
+#container{
+    width:80%;
+    margin:auto;
+}
+
+#cart{
+    padding:12px;
+    background:black;
+    color:white;
+}
+#cart:hover{
+   
+    background:grey;
+    color:black;
+}
+#show{
+    width:60%;
+}
+#show>img{
+    width:100%;
+}
