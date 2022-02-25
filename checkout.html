@@ -169,6 +169,7 @@ console.log(total)
 
 displaytotal.innerText = "₹ " + total[0];
 displaytotal1.innerText = "₹" + total;
+localStorage.setItem("myglamm-payabletotal",JSON.stringify (total));
 
 }
 
@@ -186,6 +187,7 @@ function promo(){
     {
         total = Math.floor(total- 0.3*total);
         console.log(total);
+        localStorage.setItem("myglamm-payabletotal",JSON.stringify (total));
         let displaytotal = document.getElementById("payamount");
         displaytotal.innerText = "₹" + total
 
