@@ -3,6 +3,7 @@
     display:grid;
     grid-template-columns: repeat(5,1fr);
     grid-gap: 20px;
+    width:60%;
 }
 #top>div{
     text-align: center;
@@ -28,7 +29,7 @@
     color:black;
 }
 #show{
-    width:60%;
+    width:35%;
 }
 #show>img{
     width:100%;
