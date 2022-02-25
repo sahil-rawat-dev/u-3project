@@ -6,6 +6,7 @@ let down=document.getElementById("down");
     down.innerHTML=footer()
 var data=JSON.parse(localStorage.getItem("prdc"));
 appendta(data)
+
 function appendta(){
 data.forEach((el)=>{
     let div=document.createElement("div");
@@ -90,7 +91,8 @@ function loadimg(el){
    image.src=el;
    main.append(image)
 }
-let arr=[];
+let arr= JSON.parse(localStorage.getItem("cartitem"))||[];
+
 function addtocart(el){
     arr.push(el)
     console.log(arr)
