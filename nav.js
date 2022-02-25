@@ -1,10 +1,25 @@
+window.addEventListener("load",()=>{
+  let makeup=document.getElementById("parts2");
+  makeup.addEventListener("click",()=>{
+    window.location.href="makeup.html"
+  })
+  let skin= document.getElementById("parts4");
+     skin.addEventListener("click",()=>{
+       window.location.href="skincare.html"
+     })
+     let cart=document.getElementById("cart");
+     cart.addEventListener("click",()=>{
+       window.location.href="../Cart/cart.html"
+     })
+})
+
 function navbar1(){
     document.getElementById("parts").innerHTML=""
     
     document.getElementById("parts1")
-    document.getElementById("parts2")
+    document.getElementById("parts2");
     document.getElementById("parts3")
-    document.getElementById("parts4")
+    document.getElementById("parts4");
     document.getElementById("parts5")
     document.getElementById("parts6")
     document.getElementById("parts8")

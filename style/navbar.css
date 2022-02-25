@@ -114,6 +114,7 @@
     #navbar124{    
     width:1120px;
     height: 50px;
+    background:white;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -165,14 +166,23 @@
             width:60%;
             grid-template-columns: (2,1fr);
             background-color: transparent;
+            position:fixed;
             color: black;
             display: flex;
             justify-content: space-between;
             margin: auto;
             background-image: url("ttps://files.myglamm.com/site-images/original/MBF-Desktop.jpg");
             background-size: cover;
+            margin-top: 150px;
+            background:white;
+            margin-left:9.5%;
+            width:82%;
         }
         #div2{
             display: flex;
         }
-      
+      #MyG{
+        position: fixed;
+        margin:auto;
+        margin-left:5%;
+      }
