@@ -36,4 +36,4 @@ function navbar(){
     <div id="parts9" onmouseover="navbar9()">OFFERS</div>   
 </div>`
 }
-export default navbar;
+export {navbar} ;

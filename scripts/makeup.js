@@ -202,6 +202,9 @@ let data1 = [
 ];
   localStorage.setItem("makeup",JSON.stringify(data1));
   var arr1=JSON.parse(localStorage.getItem("makeup"))
+  import{navbar}from"../components/navbar.js"
+  let div=document.getElementById("navcont");
+  div.innerHTML=navbar();
   import{footer}from"../component/footer.js";
   import{showdata}from"./showdata.js";
   let product=document.getElementById("product");

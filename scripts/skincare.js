@@ -1,3 +1,6 @@
+import{navbar}from"../components/navbar.js"
+  let div=document.getElementById("navcont");
+  div.innerHTML=navbar();
 let data=[{
     "Name":"WIPEOUT GERM Killing Face Wash",
      "Price":119,

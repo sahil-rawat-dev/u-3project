@@ -12,19 +12,26 @@
 #top>div>img{
     width:80%;
 }
-
+#navcont{
+    position:fixed;
+}
 #container{
     width:80%;
     margin:auto;
+    margin-top:180px;
 }
 
-#cart{
+#cart1,#cartbtn{
     padding:12px;
     background:black;
     color:white;
 }
-#cart:hover{
+#cart1:hover{
    
+    background:grey;
+    color:black;
+}
+#cartbtn:hover{
     background:grey;
     color:black;
 }
@@ -33,4 +40,7 @@
 }
 #show>img{
     width:100%;
+}
+#navcont{
+    margin-left:3.5%;
 }

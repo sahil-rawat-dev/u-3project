@@ -1,3 +1,6 @@
+import{navbar}from"../components/navbar.js"
+  let div=document.getElementById("navcont");
+  div.innerHTML=navbar();
 import{footer}from"../component/footer.js";
 let down=document.getElementById("down");
     down.innerHTML=footer()
@@ -62,13 +65,20 @@ data.forEach((el)=>{
       btn.addEventListener("click",()=>{
               addtocart(el)
       })
-      btn.setAttribute("id","cart")
+      btn.setAttribute("id","cart1")
+      let btn1=document.createElement("button");
+      btn1.addEventListener("click",()=>{
+          window.location.href="../Cart/cart.html"
+      })
+      btn1.textContent="Go to Cart"
+      btn1.setAttribute("id","cartbtn")
+
       let productimg=document.createElement("div");
       productimg.setAttribute("id","top");
       productimg.append(div2,div3,div4,div5,div6)
       let property=document.createElement("p");
       property.textContent=el.exproperty;
-      div.append(div1,productimg,price,name,desc,use,benifit,property,btn)
+      div.append(div1,productimg,price,name,desc,use,benifit,property,btn,btn1)
       document.getElementById("container").append(div)  
 })
 }
@@ -85,4 +95,5 @@ function addtocart(el){
     arr.push(el)
     console.log(arr)
   localStorage.setItem("cartitem",JSON.stringify(arr))
+  alert("item added to cart")
 }
