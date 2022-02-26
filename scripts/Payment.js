@@ -15,8 +15,6 @@ display(total);
 
 fun =()=>{
 
-alert("Order Successfull");
-
-window.location.href = "index.html";
+window.location.href = "success.html";
 
 }
