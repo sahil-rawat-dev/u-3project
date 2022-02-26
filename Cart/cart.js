@@ -58,7 +58,7 @@ function showProducts() {
 
   // ----------image------
         let img = document.createElement("img");
-        img.src = product.displayimg;
+        img.src = product.Image;
   //  --------------amount and total------
        let amount = document.createElement("p");
            amount.style.fontWeight = "900";
@@ -66,21 +66,22 @@ function showProducts() {
 
        let product_price = document.createElement("p");
           product_price.setAttribute("style", "font-size:20px; margin: 40px 40px;")
-           product_price.textContent = "₹" + product.price;
+           product_price.textContent = "₹" + product.Price;
            
        let total_amount = document.getElementById("total_price");
      
 
-        totalPrice += product.price;
-
-        amount.innerText = totalPrice;
+        totalPrice += product.Price;
+       
+        amount.innerText = "₹ " + totalPrice;
+        total_amount.innerHTML = null;
         total_amount.append(amount);
         
   // -----------title----------
 
         let product_name = document.createElement("p");
         product_name.setAttribute("style", "font-size:16px; margin: 20px 35px;width:350px")
-        product_name.textContent = product.title;
+        product_name.textContent = product.Name;
 
   // --------------------quantity-----------
         let quantity_div = document.createElement("div");
@@ -110,22 +111,23 @@ function showProducts() {
         function increassQuantirty() {
             if(q >= 5){
                 quantity.innerText = 5;
-                individual_total_amount.innerText =  product.price * +quantity.innerText;
+                individual_total_amount.innerText =  product.Price * +quantity.innerText;
            
                 plus.style.color = "#BDBDBD";
 
             } else {
                 quantity.innerText = ++q;
-                individual_total_amount.innerText =  product.price * +quantity.innerText;
+                individual_total_amount.innerText =  product.Price * +quantity.innerText;
                 minus.style.color = "black";
 
-                totalPrice += product.price ;
+                totalPrice += product.Price ;
                 console.log(totalPrice +" totalPrice");
                 
-                amount.innerText = totalPrice;
+                amount.innerText =  "₹ " + totalPrice;
+                total_amount.innerHTML = null;
                 total_amount.append(amount);
 
-                console.log(product.price * +quantity.innerText);
+                console.log(product.Price * +quantity.innerText);
 
             }
         }
@@ -136,7 +138,7 @@ function showProducts() {
         function decressQuantirty() {
             if (q <= 1) {
                 quantity.innerText = 1;
-                individual_total_amount.innerText =  product.price * +quantity.innerText;
+                individual_total_amount.innerText =  product.Price * +quantity.innerText;
                 minus.style.color = "#BDBDBD";
                 plus.style.color = "black";
                 // individual_total_amount.innerText = "₹" + product.price * c;
@@ -144,15 +146,16 @@ function showProducts() {
             else{
                 quantity.innerText = --q;
                
-                individual_total_amount.innerText =  product.price * +quantity.innerText;
+                individual_total_amount.innerText =  product.Price * +quantity.innerText;
                   subtotal = (Number(individual_total_amount.innerText) + subtotal)
                   console.log(subtotal, "decrease item");
                   plus.style.color = "black";
 
-                  totalPrice -= product.price;
+                  totalPrice -= product.Price;
                   console.log(totalPrice+" totalPrice");
 
-                  amount.innerText = totalPrice;
+                  amount.innerText =  "₹ " + totalPrice;
+                  total_amount.innerHTML = null;
                   total_amount.append(amount);
 
                 }
@@ -160,7 +163,7 @@ function showProducts() {
 
      
         var individual_total_amount = document.createElement("p");
-        individual_total_amount.innerText =  product.price * qty;
+        individual_total_amount.innerText =   product.Price * qty;
 
         individual_total_amount.setAttribute("style", "font-size:20px; margin-top: 40px;")
 
@@ -221,7 +224,7 @@ checkoutbtn.onclick = function()
 
   localStorage.setItem("myglamm-total",JSON.stringify (myglammtotal));
   
-    window.location.href = "#.html"
+    window.location.href = "/checkout.html"
 }
 
 

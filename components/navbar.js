@@ -19,7 +19,7 @@ function navbar(){
     </div></div></div>
 
     <div id="current">
-        <div><i id="far1" class="fas fa-trash-restore"></i></i></div>
+        <div id="cart"><i id="far1" class="fas fa-trash-restore"></i></i></div>
         <div><i id="far2" class="far fa-user"></i></div>
    
     </div>
@@ -36,4 +36,4 @@ function navbar(){
     <div id="parts9" onmouseover="navbar9()">OFFERS</div>   
 </div>`
 }
-export default navbar;
+export {navbar} ;
