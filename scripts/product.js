@@ -91,11 +91,11 @@ function loadimg(el){
    image.src=el;
    main.append(image)
 }
-let arr= JSON.parse(localStorage.getItem("cartitem"))||[];
+let arr= JSON.parse(localStorage.getItem("myglammCart"))||[];
 
 function addtocart(el){
     arr.push(el)
     console.log(arr)
-  localStorage.setItem("cartitem",JSON.stringify(arr))
+  localStorage.setItem("myglammCart",JSON.stringify(arr))
   alert("item added to cart")
 }
