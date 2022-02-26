@@ -89,4 +89,13 @@ let afkitcombo=[
     "https://files.myglamm.com/site-images/original/Virtual-Try-On_12.jpg",
     "https://files.myglamm.com/site-images/original/banner@2x-3_2.jpg"
 ]
-  export { catagory,spotlight,launches,essentials };
+
+let videoupperdata=[
+  {
+    h2:"BRAND STORY",
+    p:"Backed by one of Europe's largest natural beauty companies, MyGlamm collaborated with global experts and makeup artists to bring about exciting innovation in makeup to accomplish our single, focused goal – make looking glamorous effortless!",
+    p1:"Know More",
+    image:"https://www.myglamm.com/images/ico-play.png"
+  }
+]
+  export { catagory,spotlight,launches,essentials,bekitcombo,kitcombo,afkitcombo,videoupperdata };
