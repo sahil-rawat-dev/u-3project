@@ -1,13 +1,16 @@
 #navbar1{
-
     width:100%;
     height: 50px;
     background-color:
     #fee8e8;
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     border: 1px solid red;
     
+=======
+    margin-left:-0px;
+>>>>>>> fb1906d05dffc8726400d08011854cb3a07d13db
     
     }
     #Shipping{
@@ -28,7 +31,7 @@
     #collect{
     background-color:
     #fee8e8;
-    color: #ff9797;
+    color: rgb(245, 12, 187);
     border: transparent;
     cursor: pointer;
     margin:0px 50px;
@@ -61,10 +64,15 @@
     
     #navbar123{
     display: flex;
-    max-width: 100%;
-    height:70px;
+    max-width:100%;
+    height:50px;
     background-color:white;
+<<<<<<< HEAD
     border: 1px solid red;
+=======
+    margin-left: -0px;
+    margin-bottom:15px;
+>>>>>>> fb1906d05dffc8726400d08011854cb3a07d13db
     
     }
     #img1{
@@ -115,13 +123,18 @@
         font-size: 25px;
     }
     #navbar124{    
-    width:1120px;
-    height: 50px;
-    background:white;
+    width:80%;
+    height:50px;
+    background-color:transparent;
     display: flex;
     justify-content: space-between;
+    margin-top:60px;
     margin: auto;
+<<<<<<< HEAD
     border: 1px solid red;
+=======
+    /* margin-bottom: -5px; */
+>>>>>>> fb1906d05dffc8726400d08011854cb3a07d13db
     }
     #parts1{
     
@@ -190,5 +203,22 @@
         margin:auto;
         margin-left:5%;
       }
+<<<<<<< HEAD
       /* singin */
       
+=======
+      #far2{
+          background-color:transparent;
+          border:#ffffff;
+      }
+      .btn{
+          background-color:transparent;
+          color:black;
+          margin-right:50px;
+          width:50px;
+          height:50px;
+         margin-top:-12px;
+         border:#ffffff;
+         box-shadow: none;
+      }
+>>>>>>> fb1906d05dffc8726400d08011854cb3a07d13db

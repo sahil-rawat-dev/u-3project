@@ -9,387 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style/navbar.css">
-    <style>
-        .modal-box{ font-family: 'Poppins', sans-serif; }
- .show-modal{
-     color: #fff;
-     /* background: linear-gradient(to right, #33a3ff, #0675cf, #49a6fd); */
-     background:black;
-     font-size: 18px;
-     font-weight: 600;
-     text-transform: capitalize;
-     padding: 10px 15px;
-     /* margin: 200px auto 0; */
-     border: none;
-     outline: none;
-     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-     display: block;
-     transition: all 0.3s ease 0s;
- }
- .show-modal:hover,
- .show-modal:focus{
-     color: #fff;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-     outline: none;
- }
- .modal-dialog{
-     width: 400px;
-     margin: 70px auto 0;
- }
- .modal-dialog{ transform: scale(0.5); }
- .modal-dialog{ transform: scale(1); }
- .modal-dialog .modal-content{
-     text-align: center;
-     border: none;
- }
- .modal-content .close{
-     color: #fff;
-     /* background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff); */
-     background:black;
-     font-size: 25px;
-     font-weight: 400;
-     text-shadow: none;
-     line-height: 27px;
-     height: 25px;
-     width: 25px;
-     border-radius: 50%;
-     overflow: hidden;
-     opacity: 1;
-     position: absolute;
-     left: auto;
-     right: 8px;
-     top: 8px;
-     z-index: 1;
-     transition: all 0.3s;
- }
- .modal-content .close:hover{
-     color: #fff;
-     box-shadow: 0 0 5px rgba(0,0,0,0.5);
- }
- .close:focus{ outline: none; }
- .modal-body{ padding: 60px 40px 40px !important; }
- .modal-body .title{
-     color: #026fd4;
-     font-size: 33px;
-     font-weight: 700;
-     letter-spacing: 1px;
-     margin: 0 0 10px;
- }
- .modal-body .description{
-     color: #9A9EA9;
-     font-size: 16px;
-     margin: 0 0 20px;
- }
- .modal-body .form-group{
-     text-align: left;
-     margin-bottom: 20px;
-     position: relative;
- }
- .modal-body .input-icon{
-     color: #777;
-     font-size: 18px;
-     transform: translateY(-50%);
-     position: absolute;
-     top: 50%;
-     left: 20px;
- }
- .modal-body .form-control{
-     font-size: 17px;
-     height: 45px;
-     width: 100%;
-     padding: 6px 0 6px 50px;
-     margin: 0 auto;
-     border: 2px solid #eee;
-     border-radius: 5px;
-     box-shadow: none;
-     outline: none;
- }
- .form-control::placeholder{
-     color: #AEAFB1;
- }
- .form-group.checkbox{
-     width: 130px;
-     margin-top: 0;
-     display: inline-block;
- }
- .form-group.checkbox label{
-     color: #9A9EA9;
-     font-weight: normal;
- }
- .form-group.checkbox input[type=checkbox]{
-     margin-left: 0;
- }
- .modal-body .forgot-pass{
-     color: #7F7FD5;
-     font-size: 13px;
-     text-align: right;
-     width: calc(100% - 135px);
-     margin: 2px 0;
-     display: inline-block;
-     vertical-align: top;
-     transition: all 0.3s ease 0s;
- }
- .forgot-pass:hover{
-     color: #9A9EA9;
-     text-decoration: underline;
- }
- .modal-content .modal-body .btn{
-     color: #fff;
-     background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
-     font-size: 16px;
-     font-weight: 500;
-     letter-spacing: 1px;
-     text-transform: uppercase;
-     line-height: 38px;
-     width: 100%;
-     height: 40px;
-     padding: 0;
-     border: none;
-     border-radius: 5px;
-     border: none;
-     display: inline-block;
-     transition: all 0.6s ease 0s;
- }
- .modal-content .modal-body .btn:hover{
-     color: #fff;
-     letter-spacing: 2px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
- }
- .modal-content .modal-body .btn:focus{ outline: none; }
- @media only screen and (max-width: 480px){
-     .modal-dialog{ width: 95% !important; }
-     .modal-content .modal-body{
-         padding: 60px 20px 40px !important;
-     }
- }
- 
-   </style>
-    <style>
-        /* width */
-            ::-webkit-scrollbar {
-            width: 7px;
-            }
-
-            /* Track */
-            ::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-            }
-            
-            /* Handle */
-            ::-webkit-scrollbar-thumb {
-            background: #888; 
-            }
-
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-            background: #555; 
-            }
-        body{
-            background-color: rgb(244,244,244);
-            
-            /* overflow-y: hidden; */
-        }
-        #container{
-            width: 100%;
-           
-            
-        }
-        #bigimage{
-           width: 100%;
-            /* height: 300px; */
-            
-            
-            
-        }
-        #bigimage>img{
-            width: 100%;
-            /* height: 300px; */
-            /* object-fit: contain; */
-
-        }
-        #smallgig,#refer{
-            width: 80%;
-            padding: 20px 0px 0px 20px;
-            margin: auto;
-            /* object-fit: contain; */
-
-
-        }
-        #refer>img{
-            width: 100%;
-        }
-        #smallgig>img{
-            width: 100%;
-            /* height: 300px; */
-        }
-       
-                .productbox {
-                    width: 90%;
-                    margin: 20px auto;
-                    /* border: 1px solid red; */
-                    padding: 2% 0px;
-                    text-align: center;
-                    }
-                    .productbox h2 {
-                    margin-bottom: 15px;
-                    }
-                    .productbox > img {
-                    width: 100%;
-                    }
-            #productbox-catagory{
-                display: grid;
-                
-                grid-template-columns: repeat(8,1fr);
-                margin: auto;
-            }
-            #productbox-catagory>div>img{
-                margin: 0px 10px 0px 10px;
-                border: 5px solid red;
-                border-radius: 50%;
-            }
-            .productbox h2 {
-            text-decoration: underline;
-            text-decoration-color: rgb(250,193,193) ;
-            text-decoration-thickness: 5px;
-            text-decoration-style:wavy
-            }
-            iframe {
-            width: 100%;
-            height: 500px;
-            display: block;
-            margin: auto;
-            }
-            #video{
-                width: 100%;
-                height: 500px;
-                
-            }
-        
-            #bg-video{
-                width: 100%;
-            }
-            #spotligth,#launches,#essentials,#kit,#kitscombos{
-                
-                display: grid;
-                grid-template-columns: repeat(3,30%);
-                grid-gap: 3%;
-                
-
-            }
-            #combos{
-                display: grid;
-                grid-template-columns: repeat(2,45%);
-                grid-gap: 3%;
-            }
-            #fixed>img{
-                width: 100%;
-                position: static;
-                
-            }
-            #text{
-                margin-top: -85px;
-                height: 80px;
-                overflow: hidden;
-                background-color: white;
-                opacity: 0.7;
-                
-            }
-            #text:hover{
-                margin-top: -165px;
-                height: 160px;
-                background-color: white;
-                opacity: 0.7;
-                
-
-            }
-            #fixed>div>img,#combos>div>img{
-                width: 100%;
-            }
-            #essentials>div>img{
-                width: 100%;
-            }
-            #kit>div>img,#kitscombos>div>img{
-                width: 100%;
-            }
-            #videotext{
-                margin-top: 300px;
-                width: 60%;
-                margin: auto;
-                margin-top: -100px;
-                height: 500px;
-                color: red;
-                /* position: static; */
-            }
-            #video{
-                /* margin-top: -300px; */
-                width: 100%;
-                height: 500px;
-                
-            }
-            #video1{
-                position:-webkit-sticky;
-            }
-        
-            #bg-video{
-                width: 100%;
-                
-            }
-            #product-parent {
-                display: grid;
-                grid-template-columns: 23% 23% 23% 23%;
-                gap:4%;
-            }
-            
-            /* #product-parent>div{
-                min-width: 228px;
-                border: 1px solid black;
-                margin: 0px 10px 0px 10px;
-            }
-            #product-parent>div>img{
-                width: 100%;
-                height: 100px;
-            } */
-
-
-
-
-            /* triel */
-            video {
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                }
-                .video-wrapper {
-                    margin-top: 50px;
-                border: 2px solid #000;
-                width: 100%;
-                height: 600px;
-                position: relative;
-                overflow: hidden;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                }
-                .header{
-                    width: 50%;
-                position: relative;
-                color: white;
-                text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
-                }
-               
-                
-            
-            @media only screen and (min-width:321px) and (max-width:720px) {      
-               
-                  }
-            @media only screen and (min-width:0px) and (max-width:320px) {   
-     
-                }
-    </style>
+    <link rel="stylesheet" href="./style/index.css">
 
             <link rel="stylesheet" href=
             "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -472,6 +92,36 @@
     <div id="parts"></div>
 
     <div id="div2"></div>
+<<<<<<< HEAD
+=======
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                    <h3 class="title">Login</h3>
+                    <div class="description">
+                        <img src="https://www.investindia.gov.in/themes/investindia/image/unicorns/2021/MyGlamm.png" alt="Myglamm">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa fa-user"></i></span>
+                        <input type="email" class="form-control" placeholder="Enter Mobile No">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fas fa-key"></i></span>
+                        <input type="password" class="form-control" placeholder="Enter OTP">
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox">
+                        <label>Remamber me</label>
+                    </div>
+                    <a href="signup.html" class="forgot-pass">Create account</a>
+                    <button class="btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+>>>>>>> fb1906d05dffc8726400d08011854cb3a07d13db
     
     <div id="body1">
         <div id="bigimage"> <img src="https://files.myglamm.com/site-images/original/MBF-Desktop.jpg" alt=""> </div>
