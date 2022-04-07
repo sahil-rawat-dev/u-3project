@@ -20,7 +20,8 @@ function navbar(){
 
     <div id="current">
         <div id="cart"><i id="far1" class="fas fa-trash-restore"></i></i></div>
-        <div> <button type="button" class="btn  btn-lg show-modal" data-toggle="modal" data-target="#myModal"><i id="far2" class="far fa-user"></i></button></div>
+        <div><i id="far2" class="far fa-user"></i></div>
+        
    
     </div>
 </div>
